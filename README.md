@@ -3,6 +3,15 @@
 
 Introduction to `bert-etl` with the least amount of code possible
 
+## Install
+
+```
+$ git clone git@github.com:jbcurtin/bert-simple.git
+$ cd bert-simple
+$ virtualenv -p $(which python3) env
+$ source env/bin/activate
+$ pip install bert-etl
+```
 
 ## Overview
 

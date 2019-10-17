@@ -1,4 +1,6 @@
 every_lambda:
-  memory_limit: 128
+  runtime: python3.7
+  memory_limit: 128 # multipule of 64
   environment:
     DEBUG: 'false'
+
