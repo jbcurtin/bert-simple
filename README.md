@@ -44,3 +44,20 @@ Please reference the following gist for a complete install script, https://gist.
 
 https://bert-etl.readthedocs.io/en/latest/
 
+## Logging
+
+AWS Lambda logs to `/aws/lambda` groups. `awslogs` provides a seemless way of tailing logs from your console.
+
+Lets start by identifying which log group AWS lambda uses. We can do this two ways.
+
+```
+# first way by aws-cli
+$ pip install aws-cli
+$ aws log describe-log-groups |grep '/aws/lambda'
+
+# second way
+$ pip install awslogs
+$ awslogs get /aws/lambda/first_aws_lambda_function ALL --watch
+```
+
+When the function is ran, the log group is auto-magically created by aws services
