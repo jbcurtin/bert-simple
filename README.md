@@ -27,3 +27,20 @@ $ bert-deploy.py -m staging
 # Run code in AWS Lambda
 $ bert-deploy.py -m staging -i
 ```
+
+## Helper Images
+
+To run `bert-etl` locally using `bert-runner.py`, you'll need a redis connection listening on 6379 of your host. Here is a docker command that'll do that for you
+
+```
+docker run -p 6379:6379 -d redis
+```
+
+## How to install docker
+
+Please reference the following gist for a complete install script, https://gist.github.com/jbcurtin/ea10d25475de401360fd9d44b5d392ac
+
+## Bert ETL Documentation
+
+https://bert-etl.readthedocs.io/en/latest/
+
