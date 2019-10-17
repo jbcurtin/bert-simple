@@ -61,3 +61,14 @@ $ awslogs get /aws/lambda/first_aws_lambda_function ALL --watch
 ```
 
 When the function is ran, the log group is auto-magically created by aws services
+
+## Aws Creds file
+
+```
+[default]
+region=us-east-1
+aws_access_key_id = 
+aws_secret_access_key =
+```
+
+
