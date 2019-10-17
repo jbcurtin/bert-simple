@@ -1,0 +1,4 @@
+every_lambda:
+  memory_limit: 128
+  environment:
+    DEBUG: 'false'
